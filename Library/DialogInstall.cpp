@@ -1038,7 +1038,7 @@ void DialogInstall::LaunchRainmeter()
 	// Execute Rainmeter and wait until it is ready to process messages
 	// Note: There may be a small delay between the time Rainmeter restarts,
 	// and any skins from the rmskin get loaded (if selected).
-	std::wstring rainmeterExe = g_Data.programPath + L"Rainmeter.exe";
+	std::wstring rainmeterExe = g_Data.programPath + L"upupoo-rainmeter.exe";
 	std::wstring args;
 	if (!m_LoadLayout.empty())
 	{

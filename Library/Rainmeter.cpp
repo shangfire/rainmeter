@@ -162,7 +162,7 @@ int Rainmeter::Initialize(LPCWSTR iniPath, LPCWSTR layout, bool safeStart)
 		return 1;
 	}
 
-	m_Instance = GetModuleHandle(L"Rainmeter");
+	m_Instance = GetModuleHandle(L"upupoo-rainmeter");
 
 	WCHAR* buffer = new WCHAR[MAX_LINE_LENGTH];
 	GetModuleFileName(m_Instance, buffer, MAX_LINE_LENGTH);
@@ -827,7 +827,7 @@ void Rainmeter::CreateComponentFolders(bool defaultIniLocation)
 		{
 			// Create a hidden stub Rainmeter.exe into SettingsPath for old addon
 			// using relative path to Rainmeter.exe
-			std::wstring from = m_Path + L"Rainmeter.exe";
+			std::wstring from = m_Path + L"upupoo-rainmeter.exe";
 			System::CopyFiles(from, path);
 
 			// Get rid of all resources from the stub executable

@@ -910,7 +910,7 @@ unsigned __stdcall MeasureWebParser::NetworkDownloadThreadProc(void* pParam)
 		else  // cache mode
 		{
 			GetTempPath(MAX_PATH, buffer);
-			wcscat(buffer, L"Rainmeter-Cache\\");  // "%TEMP%\Rainmeter-Cache\"
+			wcscat(buffer, L"UpupooRainmeter-Cache\\");  // "%TEMP%\Rainmeter-Cache\"
 		}
 		CreateDirectory(buffer, nullptr);	// Make sure that the folder exists
 		directory = buffer;
